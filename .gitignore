@@ -1,0 +1,46 @@
+# === CLion / CMake / Build ===
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
+.idea/
+
+# === macOS system files ===
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# === User-specific CLion files ===
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# === Logs, databases, crash reports ===
+*.log
+*.trace
+*.swp
+*.swo
+
+# === Backup files ===
+*~
+*.bak
+
+# === Files created by editors or system ===
+*.sublime-workspace
+*.sublime-project
+.vscode/
+*.orig
+
+# === Output binaries ===
+*.o
+*.out
+*.a
+*.so
+*.exe
+*.dll
+
+# === Custom logs ===
+log.txt
