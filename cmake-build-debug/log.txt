@@ -1,0 +1,6 @@
+[2025-05-21 22:34:59] [INFO] This is logging info!
+[2025-05-21 22:34:59] [WARNING] This is a warning!
+[2025-05-21 22:34:59] [ERROR] This is a error!
+[2025-05-21 22:59:56] [INFO] This is logging info!
+[2025-05-21 23:00:06] [WARNING] This is a warning!
+[2025-05-21 23:00:18] [ERROR] This is a error!

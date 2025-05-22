@@ -1,7 +1,3 @@
-//
-// Created by Asmita Tamang on 5/21/25.
-//
-
 #ifndef LOGGER_H
 #define LOGGER_H
 
@@ -13,8 +9,7 @@
 class Logger {
 private:
     std::ofstream logFile;
-
-    static std::string getCurrentTimestamp() {
+    std::string getCurrentTimestamp() { //function to creat a timestamp
         const time_t now = time(nullptr);
         tm* timeinfo = localtime(&now);
         char timestamp[20];
@@ -22,14 +17,13 @@ private:
         return {timestamp};
     }
 public:
-    explicit Logger(const std::string& fileName);
-    ~Logger();
 
-    // void set_level(LogLevel level);
+    explicit Logger(const std::string& fileName);//constructor to open file in append mode
+    ~Logger(); //deconstructor to close file
 
-    void logInfo(const std::string& message);
-    void logWarning(const std::string& message);
-    void logError(const std::string& message);
+    void logInfo(const std::string& message); //log a message for log level INFO
+    void logWarning(const std::string& message); //log a message for log level WARN
+    void logError(const std::string& message); //log a message for log level ERROR
 
 };
 
